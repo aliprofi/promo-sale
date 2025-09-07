@@ -1,0 +1,563 @@
+/* Sales News Plugin Styles */
+
+/* Общие стили для контейнера */
+.sales-container,
+.sales-archive-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Стили для отдельной новости */
+.sales-single {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.sales-header {
+    background: linear-gradient(135deg, #5D6D7E 0%, #34495E 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.sales-title {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.sales-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.sales-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sales-content {
+    padding: 30px;
+}
+.sales-thumbnail {
+    margin-bottom: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.sales-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sales-dates-block,
+.sales-description-block {
+    margin-bottom: 30px;
+}
+
+.sales-dates-title,
+.sales-description-title {
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    color: #34495E;
+}
+
+.sales-dates-text {
+    background: #f8f9fa;
+    border-left: 4px solid #5D6D7E;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: flex;
+    gap: 25px;
+}
+
+.sales-description-text {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.sales-description-text p:last-child {
+    margin-bottom: 0;
+}
+
+.sales-cta-block {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.sales-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #e52e04;
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(229, 46, 4, 0.3);
+    cursor: pointer; /* Добавлен курсор для span */
+}
+.sales-cta-button:hover {
+    transform: translateY(-2px);
+    background: #c22100;
+    box-shadow: 0 6px 16px rgba(229, 46, 4, 0.4);
+}
+
+.sales-footer {
+    padding: 20px 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.sales-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+.sales-tags .dashicons {
+    color: #6c757d;
+}
+.sales-tags span a {
+    display: inline-block;
+    background: #e9ecef;
+    color: #495057;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.sales-tags span a:hover {
+    background: #6c757d;
+    color: white;
+}
+
+
+/* Стили архивной страницы */
+.sales-archive-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #5D6D7E 0%, #34495E 100%);
+    color: white;
+    border-radius: 8px;
+}
+
+.sales-archive-title {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+.sales-archive-description {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.sales-search-form {
+    margin-bottom: 30px;
+}
+.sales-search-form form {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.sales-search-form input[type="search"] {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.sales-search-form button {
+    padding: 0 25px;
+    background: #34495E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.sales-search-form button:hover {
+    background: #2c3e50;
+}
+
+.sales-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.sales-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.sales-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.sales-item-thumbnail a {
+    display: block;
+}
+.sales-item-thumbnail img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+.sales-item-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sales-item-title {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+.sales-item-title a {
+    color: #333;
+    text-decoration: none;
+}
+.sales-item-title a:hover {
+    color: #e52e04;
+}
+
+.sales-item-dates {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sales-item-excerpt {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 15px;
+}
+.sales-item-excerpt p:last-of-type {
+    margin-bottom: 0;
+}
+
+.sales-item-footer {
+    margin-top: auto;
+}
+
+.sales-read-more {
+    display: inline-block;
+    background: #34495E;
+    color: white !important;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.sales-read-more:hover {
+    background: #e52e04;
+}
+
+.sales-pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sales-no-posts {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+    .sales-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sales-item {
+        flex-direction: column;
+    }
+}
+
+/* --- НОВЫЕ СТИЛИ --- */
+
+/* Стиль для миниатюры, вставленной в начало поста */
+.post-thumbnail-in-content {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* Стили для тега <code> */
+code {
+    cursor: pointer; /* Показывает, что элемент кликабельный */
+    background-color: #e9ecef;
+    padding: 2px 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+code:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Стиль для тега <code> после успешного копирования */
+code.copied {
+    background-color: #28a745; /* Зеленый цвет успеха */
+    color: #fff;
+}
+
+/* --- ОБНОВЛЕННЫЕ СТИЛИ ДЛЯ ВНЕШНИХ ССЫЛОК --- */
+.spanlink {
+  color: #e52e04; /* Цвет ссылки, можно поменять на любой */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.spanlink:hover {
+  color: #c22100; /* Цвет ссылки при наведении */
+  text-decoration: none;
+}
+
+/* --- СТИЛИ ДЛЯ ШОРТКОДА АНОНСОВ РАСПРОДАЖ --- */
+.sales-promo-block {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.sales-promo-title {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495E;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.sales-promo-list {
+    margin-bottom: 15px;
+}
+
+.sales-promo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sales-promo-item:last-child {
+    border-bottom: none;
+}
+
+.sales-promo-content {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.sales-promo-item-title {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sales-promo-item-title a {
+    color: #34495E;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sales-promo-item-title a:hover {
+    color: #e52e04;
+}
+
+.sales-promo-dates {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.sales-promo-dates .dashicons {
+    font-size: 12px;
+}
+
+.sales-promo-excerpt {
+    font-size: 12px;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+.sales-promo-action {
+    flex-shrink: 0;
+}
+
+.sales-promo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #34495E;
+    color: white !important;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+
+.sales-promo-btn:hover {
+    background: #e52e04;
+    transform: translateY(-1px);
+}
+
+.sales-promo-btn .dashicons {
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+.sales-promo-footer {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.sales-promo-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #34495E !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.sales-promo-all:hover {
+    color: #e52e04 !important;
+}
+
+.sales-promo-all .dashicons {
+    font-size: 14px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 480px) {
+    .sales-promo-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .sales-promo-content {
+        margin-right: 0;
+    }
+    
+    .sales-promo-action {
+        align-self: flex-end;
+    }
+}
+
+/* Дополнительные стили для кнопок шорткода */
+.sales-promo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #34495E;
+    color: white !important;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 15px;
+    transition: all 0.2s;
+    cursor: pointer; /* Добавляем курсор для span */
+    border: none;
+}
+
+.sales-promo-btn:hover {
+    background: #e52e04;
+    transform: translateY(-1px);
+    cursor: pointer; /* Убедимся, что курсор меняется при наведении */
+}
+
+/* Специфические стили для span-кнопок */
+.sales-promo-action span.sales-promo-btn {
+    cursor: pointer !important;
+}
+
+.sales-promo-action span.sales-promo-btn:hover {
+    background: #e52e04 !important;
+    transform: translateY(-1px) !important;
+    cursor: pointer !important;
+}
+
+/* Стили для ссылок в заголовках */
+.sales-promo-item-title a {
+    color: #34495E;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sales-promo-item-title a:hover {
+    color: #e52e04;
+    text-decoration: underline;
+}
+
+/* Стили для ссылки "Все распродажи" */
+.sales-promo-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #34495E !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.sales-promo-all:hover {
+    color: #e52e04 !important;
+    text-decoration: underline;
+}
